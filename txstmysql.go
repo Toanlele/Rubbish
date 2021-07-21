@@ -18,7 +18,7 @@ type Doctor struct {
 
 func main() {
 	//-------1、打开数据库--------
-	db, err := sql.Open("mysql", "admin:bNaAWKLt7x5B6dx5@tcp(127.0.0.1:3306)/admin?charset=utf8&parseTime=True")
+	db, err := sql.Open("mysql", "Toanle:sHf7D3KJkXyXwnM3@tcp(192.168.31.35:3306)/toanle?charset=utf8&parseTime=True")
 	if err != nil {
 		fmt.Println("数据库链接错误", err)
 		return
@@ -35,7 +35,7 @@ func main() {
 	fmt.Println("单条数据结果：", doc)
 
 	//-------3、查询数据列表--------
-	rows2, err := db.Query("select * from doctor_tb where age > ?", 18)
+	rows2, err := db.Query("select * from doctor_tb where age > ?", 1)
 	if err != nil {
 		fmt.Println("多条数据查询错误", err)
 		return
