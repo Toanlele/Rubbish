@@ -52,7 +52,7 @@ func main() {
 	}
 	//fmt.Println("多条数据查询结果", docList)
 	//-------4、新增数据--------
-	result, err := db.Exec("insert into doctor_tb(name,age,sex,addTime) values(?,?,?,Now())", "花医生", 40, 2)
+	result, err := db.Exec("insert into doctor_tb(name,age,sex,addTime) values(?,?,?,Now())", "熊娇", 40, 2)
 	if err != nil {
 		fmt.Println("新增数据错误", err)
 		return
@@ -62,7 +62,7 @@ func main() {
 	fmt.Printf("新增的数据ID：%d , 受影响行数：%d \n", newID, i)
 
 	//-------5、修改数据--------
-	result2, err := db.Exec("update doctor_tb set age=20 where id = ?", 2)
+	result2, err := db.Exec("update doctor_tb set age=139 where id = ?", 4)
 	if err != nil {
 		fmt.Println("修改数据错误", err)
 		return
