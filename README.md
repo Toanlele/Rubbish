@@ -6,4 +6,4 @@
 - mysql.go  //这是Golang编程学习数据库服务、
 - fileio.go //这个是用于学习对文本处理 （处理文本list.txt) 
 - RaspbianGPIO //这是用于学习树莓派GPIO处理（该项目是利用GO语言实现的流水灯效果）
-
+- RaspbianGPIOcontrol  //用于树莓派控制
