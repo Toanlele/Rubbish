@@ -14,23 +14,23 @@ func main() {
 	if err != nil {
 		panic(fmt.Sprint("unable to open gpio", err.Error()))
 	}
-	var Qexp int
+	var Qexp string
 	var Qesp int
 	fmt.Println("Please enter the parameters：")
 	for true {
 		fmt.Scan(&Qexp)
 
 		switch Qexp {
-		case 1:
+		case "w":
 			Qesp = 18
-		case 2:
+		case "a":
 			Qesp = 23
-		case 3:
+		case "s":
 			Qesp = 24
-		case 4:
+		case "d":
 			Qesp = 25
 		default:
-			if Qexp == 0 {
+			if Qexp == "0" {
 				os.Exit(3)
 			}
 			fmt.Println("6、默认 case")
